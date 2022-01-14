@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{background-color: rgb(199, 227, 247);}
+div{border: 4px solid rgba(165, 218, 240, 0.664);
+    width:300px;height:400px; 
+    margin-top:10%; margin-left:40%; text-align:center;font-family: 'IM_Hyemin-Bold';color:rgba(109, 181, 230, 0.664)}
+
+#login_header {margin-top: 64px;
+    margin-bottom: 46px;color:rgba(109, 181, 230, 0.664);font-family: 'IM_Hyemin-Bold';font-size: xx-large;}
+
+#id_input_box, #pw_input_box, #name_input_box, #email_input_box
+    {margin-bottom: 14px;
+    margin:5px;
+    width: 180px;
+    height: 26px;
+    border: 0;
+    border-bottom: 1px solid rgba(165, 218, 240, 0.664);background-color:rgb(199, 227, 247);font-family: 'IM_Hyemin-Bold';font-size:large}
+
+.signup_button{
+    margin-top: 40px;
+    border: 0;
+    height: 24px;
+    width: 120px;background :none;color:rgba(109, 181, 230, 0.664);font-family: 'IM_Hyemin-Bold';font-size: x-large;
+      }
+
+.signup_button:hover{
+    color:rgb(31, 113, 168)
+}
+.back,.home{ background :none;
+    border:none;
+    color:rgba(109, 181, 230, 0.664);
+    font-family: 'IM_Hyemin-Bold';
+    font-size: large;}
+.back:hover{
+    color:rgb(31, 113, 168)
+}
+
+.home:hover{
+    color:rgb(31, 113, 168)
+}

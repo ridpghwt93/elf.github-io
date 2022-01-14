@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>업다운게임</title>
+    <style>
+        @font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        body {
+            height: 100vh;
+            background-color: rgb(199, 227, 247);
+        }
+        .contWrap{
+            position: relative;
+            width: 400px;
+            background-color: rgb(199, 227, 247);font-family: 'IM_Hyemin-Bold';
+            padding: 20px;
+            top : 40%;
+            left : 50%;
+            text-align: center;
+            transform: translate(-50%, -50%); 
+        }
+
+        input {
+            padding: 10px 20px;font-family: 'IM_Hyemin-Bold';
+            font-size: 20px;
+            text-align: center;
+            max-width: 170px;
+        }
+
+        button {
+            font-size : 20px;
+            padding: 8px 20px;
+            text-align: center;font-family: 'IM_Hyemin-Bold';
+        
+        }
+
+    </style>
+
+    <script>
+        
+        window.onload = function(){
+            let input = document.querySelector(".userInput"); // User가 입력하는 숫자
+            let result = document.querySelector(".result"); // 업, 다운, 정답 여부를 알려줌
+            let button = document.querySelector(".startBtn"); // 확인 버튼
+            let life= document.querySelector(".life");
+        //button.addEventListener("click", function(){ // 선택 1번
+        //    resultfunc();
+        // });
+
+            button.addEventListener("click", resultfunc); // 선택 2번
+
+            let randomNum = parseInt(Math.random()*100); // 0~99까지의 랜덤 숫자
+            let cnt=10
+
+            alert(randomNum); // 페이지가 onload되면 alert로 생성된 난수(정답)을 보여줌
+
+    
+
+            function resultfunc() { // 버튼이벤트의 동작을 함수로 분리하여 정의함.
+                let value = input.value; // 사용자가 입력한 값을 가져옴.
+
+                if(value == randomNum){ // 정답이면
+                    result.innerHTML = "정답!";
+                }
+                else if(value > randomNum) { //입력값 , 컴퓨터값 비교
+                    result.innerHTML = "다운👇"
+                    life.innerHTML=cnt--
+                
+
+            }
+                else { //입력값 , 컴퓨터값 비교
+                    result.innerHTML = "업👆"
+                    life.innerHTML=cnt--
+            }
+                if (cnt==-2){alert("실패😥")}
+
+        }
+
+
+    }
+
+
+</script>
+
+    
+</head>
+<body>
+    <div class="contWrap">
+        <h3>Choose number</h3>
+        <p class="result">1부터 100사이</p>
+        <input type="number" class="userInput" value="0" max="99" min="0">
+        <button type="button" class="startBtn">확인</button>
+        <p class="life">목숨</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- 외부 CSS로 연결해줍니다! -->
+    <link rel="stylesheet" href="music.css">
+
+    <!-- 외부 JavaScript로 연결해줍니다! -->
+    <script src="music.js"></script>
+</head>
+<body>
+
+    <header>
+        <button class="back" onclick="location.href='mainpage.html'">BACK</button>
+    </header>    
+    <div id="slideShow">
+        <ul class="slides">
+            <!-- 슬라이드에 사용할 이미지들의 class를 slideImage로 지정하여 따로 관리할 것입니다! -->
+            <li><img class="slideImage" src="블루문.jpg" onclick="location.href='https://youtu.be/l3pXHJTmpqU'"></li>
+            <li><img class="slideImage" src="레드뮬리.jpg" onclick="location.href='https://youtu.be/eNh0jPQRbb4'"></li>
+            <li><img class="slideImage" src="제로.jpg" onclick="location.href='https://youtu.be/uUWjTEYWBvA'"></li>
+            <li><img class="slideImage" src="하얀거짓말.jpg" onclick="location.href='https://youtu.be/QMzXOZNgmeE'"></li>
+            <li><img class="slideImage" src="푸빛계.jpg" onclick="location.href='https://youtu.be/n0LZmB2UjxA'"></li>
+            <li><img class="slideImage" src="내 마음.jpg" onclick="location.href='https://youtu.be/YbVlhdoo13s'"></li>
+            <li><img class="slideImage" src="비처럼가지마요.jpg" onclick="location.href='https://youtu.be/-UROg0lsqW0'"></li>
+            <li><img class="slideImage" src="어린왕자.jpg" onclick="location.href='https://youtu.be/GbxuBglvT1E'"></li>
+            
+        </ul>
+        <p class="controller">
+            <span class="prev">&lang;</span> <!-- &lang은 '왼쪽 화살표'입니다! -->
+            <span class="next">&rang;</span> <!-- &rang은 '오른쪽 화살표'입니다! -->
+        </p>
+    </div>
+</body>
+</html>

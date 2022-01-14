@@ -1,0 +1,42 @@
+
+body{background-color: rgb(199, 227, 247);}
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#photo{margin-top:30%
+
+}
+#CONTAINER {
+    display: flex;
+    margin-top: 10%;
+    margin-left:20%;
+
+
+}
+#box{margin-top:5%;
+    margin-right:20%;
+    margin-left:3%
+    ;
+    }
+#name,#age,#mbti,#mail,#birth{margin-bottom: 1px;
+    margin:5px;
+    margin-left:0%;
+    margin-top: 1px;
+    font-family: 'IM_Hyemin-Bold';
+    font-size:X-large;
+    background: none;
+    color:rgba(82, 171, 230, 0.664);
+    ;}
+.back{ background :none;
+    border:none;
+    color:rgba(109, 181, 230, 0.664);
+    font-family: 'IM_Hyemin-Bold';
+    font-size: large;}
+.back:hover{
+    color:rgb(31, 113, 168)
+}
+    
